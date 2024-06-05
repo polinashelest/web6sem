@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <label for="city">Назва населеного пункту:</label>
+        <select id="city">
+            <option value="vinnytsia">Вінниця</option>
+            <option value="horlivka">Горлівка</option>
+            <option value="dnipro">Дніпро</option>
+            <option value="donetsk">Донецьк</option>
+            <option value="zhytomyr">Житомир</option>
+            <option value="zaporizhzhia">Запоріжжя</option>
+            <option value="ivanofrankivsk">Івано-Франківськ</option>
+            <option value="kamyanske">Кам'янське</option>
+            <option value="kyiv">Київ</option>
+            <option value="kryvyirih">Кривий Ріг</option>
+            <option value="kropyvnytskyi">Кропивницький</option>
+            <option value="luhansk">Луганськ</option>
+            <option value="lutsk">Луцьк</option>
+            <option value="%D0%BB%D1%8C%D0%B2%D1%96%D0%B2">Львів</option>
+            <option value="makiyivka">Макіївка</option>
+            <option value="mariupol">Маріуполь</option>
+            <option value="mykolayiv">Миколаїв</option>
+            <option value="odesa">Одеса</option>
+            <option value="poltava">Полтава</option>
+            <option value="rivne">Рівне</option>
+            <option value="sevastopol">Севастополь</option>
+            <option value="simferopol">Сімферополь</option>
+            <option value="%D1%81%D1%83%D0%BC%D1%81%D1%8C%D0%BA%D0%B0">Суми</option>
+            <option value="ternopil">Тернопіль</option>
+            <option value="kharkiv">Харків</option>
+            <option value="kherson">Херсон</option>
+            <option value="khmelnitskyi">Хмельницький</option>
+            <option value="cherkasy">Черкаси</option>
+            <option value="chernivtsi">Чернівці</option>
+            <option value="chernihiv">Чернігів</option>
+        </select>
+
+        <div class="forecast-period">
+            <label>
+                <input type="radio" name="period" value="today" checked> Сьогодні
+            </label>
+            <label>
+                <input type="radio" name="period" value="7days"> 7 днів
+            </label>
+            <label>
+                <input type="radio" name="period" value="14days"> 14 днів
+            </label>
+        </div>
+
+        <button id="search">Пошук</button>
+        <button id="saveAsText">Зберегти у текстовий файл</button>
+        <button id="saveAsJson">Зберегти у JSON</button>
+
+        <textarea id="forecast" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
